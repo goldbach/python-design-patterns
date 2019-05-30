@@ -1,5 +1,6 @@
 from hashlib import md5, sha1
 
+
 def streamhasher(algorithm, chunk_size=4096):
     def hash(stream):
         hasher = algorithm()
@@ -10,14 +11,11 @@ def streamhasher(algorithm, chunk_size=4096):
 
     return hash
 
+
 md5_hasher = streamhasher(md5)
 sha1_hasher = streamhasher(sha1)
 
 # assumes workingdir is top-level dir
-fname = './strategy/stream.py' 
+fname = './strategy/stream.py'
 print("MD5", md5_hasher(open(fname)))
 print("SHA1", sha1_hasher(open(fname)))
-
-
-
-

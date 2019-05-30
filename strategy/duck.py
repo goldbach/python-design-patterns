@@ -22,7 +22,8 @@ class Duck:
         return self.quack_behavior.execute()
 
     def __repr__(self):
-        return "I'm {} - look at me, I'm ".format(self.name) 
+        return "I'm {} - look at me, I'm ".format(self.name)
+
 
 class DuckNormalFly(DuckStrategy):
 

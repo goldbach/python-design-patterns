@@ -1,6 +1,7 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
 
+
 class Observable(ABC):
 
     def __init__(self):
@@ -11,7 +12,7 @@ class Observable(ABC):
 
     def unsubscribe(self, o: Observer):
         self._observers.remove(o)
-    
+
     def notify_observers(self):
         for observer in self._observers:
             observer.update()
@@ -45,11 +46,10 @@ class BusinessLogic(Observable):
 
 class IwantToKnow(Observer):
 
-    ### inherit __init__
+    # inherit __init__
 
     def update(self):
         print("Im class 1 - Got an update", self.observable.get_result())
-        
 
 
 class IwantToKnowToo(Observer):
@@ -70,4 +70,3 @@ businesslogic.do_thing()
 
 businesslogic.unsubscribe(c2)
 businesslogic.do_thing()
-
