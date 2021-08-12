@@ -15,9 +15,9 @@ The patterns covered are
 1. Singleton Pattern
 1. Command Pattern
 1. Adapter Pattern
-1. (Facade Pattern )
-1. (Proxy Pattern)
-1.
+1. Facade Pattern
+1. Proxy Pattern
+1. Bridge Pattern
 1.
 1.
 1. 

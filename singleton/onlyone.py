@@ -15,7 +15,7 @@ class OnlyOne:
 
 a = OnlyOne()
 b = OnlyOne()
-assert a == b
+assert a is b
 
 a.val = 43
 assert b.val == 43
